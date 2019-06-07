@@ -22,12 +22,16 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  //var newKittens = kittens.slice();
-  var newKittens = [...kittens];
-  //var newArray = kittens.concat();
+  var newKittens = kittens.slice(); 
+  // or var newKittens = [...kittens];
   newKittens.push(name);
   return newKittens;
 }
 
+function prependKitten(name) {
+  var newKittens = kittens.slice();
+  newKittens.unshift(name);
+  return newKittens;
+}
 
 
